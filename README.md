@@ -1,10 +1,10 @@
 # Kube-VIP Container - CleanStart
 
-This container package ships the custom `cleanstart/kube-vip:latest-dev` image and a ready-to-run Kubernetes sample that demonstrates how to provide LoadBalancer functionality in environments without a cloud load balancer integration (for example Kind or on-prem clusters). The CleanStart Kube-VIP image provides a production-ready, security-hardened container optimized for enterprise environments. Built on a minimal base OS with comprehensive security hardening, this image delivers reliable application execution with advanced security features.
+This container package ships the custom `ghcr.io/cleanstart-containers/kube-vip:latest-dev` image and a ready-to-run Kubernetes sample that demonstrates how to provide LoadBalancer functionality in environments without a cloud load balancer integration (for example Kind or on-prem clusters). The CleanStart Kube-VIP image provides a production-ready, security-hardened container optimized for enterprise environments. Built on a minimal base OS with comprehensive security hardening, this image delivers reliable application execution with advanced security features.
 
 **📌 CleanStart Foundation:** Security-hardened, minimal base OS designed for enterprise containerized environments.
 
-**Image Path:** `cleanstart/kube-vip`
+**Image Path:** `ghcr.io/cleanstart-containers/kube-vip`
 
 **Registry:** CleanStart Registry
 
@@ -41,7 +41,7 @@ CleanStart images are built on secure, minimal base operating systems and optimi
 - **Multi-Architecture Support**: Available for AMD64 and ARM64 architectures
 - **Production Ready**: Optimized for enterprise deployment and scaling
 - **Comprehensive Documentation**: Detailed guides and best practices for each image
-- **Purpose-built image**: Ships a trimmed `cleanstart/kube-vip:latest-dev` image with the kube-vip binary installed under `/usr/bin/kube-vip`
+- **Purpose-built image**: Ships a trimmed `ghcr.io/cleanstart-containers/kube-vip:latest-dev` image with the kube-vip binary installed under `/usr/bin/kube-vip`
 - **Fully scripted sample**: A single manifest bundle wires together namespace, RBAC, DaemonSet, ConfigMap-backed configuration, and a demo HTTP service
 - **Kind-friendly defaults**: Configuration values (such as the sample VIP CIDR) align with the default Kind Docker network and work out of the box for local clusters
 - **Observability baked in**: The sample highlights how to tail kube-vip logs, confirm leader election status, and verify service endpoints
@@ -63,15 +63,15 @@ Before deploying, ensure you have:
 
 ### Pull Commands
 ```bash
-docker pull cleanstart/kube-vip:latest
-docker pull cleanstart/kube-vip:latest-dev
+docker pull ghcr.io/cleanstart-containers/kube-vip:latest
+docker pull ghcr.io/cleanstart-containers/kube-vip:latest-dev
 ```
 
 ### Run Commands
 
 Basic test:
 ```bash
-docker run -it --name kube-vip-test cleanstart/kube-vip:latest-dev
+docker run -it --name kube-vip-test ghcr.io/cleanstart-containers/kube-vip:latest-dev
 ```
 
 Production deployment:
@@ -80,7 +80,7 @@ docker run -d --name kube-vip-prod \
   --read-only \
   --security-opt=no-new-privileges \
   --user 1000:1000 \
-  cleanstart/kube-vip:latest
+  ghcr.io/cleanstart-containers/kube-vip:latest
 ```
 
 ### Deployment Steps
@@ -118,8 +118,8 @@ CleanStart images support multiple architectures to ensure compatibility across 
 
 ### Architecture-based Pull Commands
 ```bash
-docker pull --platform linux/amd64 cleanstart/kube-vip:latest
-docker pull --platform linux/arm64 cleanstart/kube-vip:latest
+docker pull --platform linux/amd64 ghcr.io/cleanstart-containers/kube-vip:latest
+docker pull --platform linux/arm64 ghcr.io/cleanstart-containers/kube-vip:latest
 ```
 
 ---
