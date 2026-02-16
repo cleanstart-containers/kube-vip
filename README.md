@@ -148,7 +148,7 @@ Remove the deployed resources by deleting the manifest bundle and its supporting
 - **Kube-VIP GitHub Repository:** https://github.com/kube-vip/kube-vip
 - **Provenance / SBOM / Signature:** https://images.cleanstart.com/images/kube-vip
 - **Docker Hub:** https://hub.docker.com/r/cleanstart/kube-vip
-- **CleanStart All Images:** https://images.cleanstart.com
+- **CleanStart All Images:** https://images.cleanstart.com/images/kube-vip/details
 - **CleanStart Community Images:** https://hub.docker.com/u/cleanstart
 
 ---
