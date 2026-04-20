@@ -142,16 +142,21 @@ Remove the deployed resources by deleting the manifest bundle and its supporting
 
 ---
 
-## Resources
-
-- **Official Documentation:** https://kube-vip.io/
-- **Kube-VIP GitHub Repository:** https://github.com/kube-vip/kube-vip
-- **Provenance / SBOM / Signature:** https://images.cleanstart.com/images/kube-vip
-- **Docker Hub:** https://hub.docker.com/r/cleanstart/kube-vip
-- **CleanStart All Images:** https://images.cleanstart.com
-- **CleanStart Community Images:** https://hub.docker.com/u/cleanstart
-
----
+## Documentation Resources
+Essential links and resources for further information
+ 
+**CleanStart Images**: https://images.cleanstart.com/
+ 
+**Community Images**:
+**Docker Hub**: https://hub.docker.com/u/cleanstart<br>
+**GitHub**: https://github.com/cleanstart-containers<br>
+**AWS ECR Public Gallery**: https://gallery.ecr.aws/cleanstart/
+ 
+**Presence on Social Media**:
+**Community**: https://www.linkedin.com/groups/18324021/<br>
+**YouTube**: https://www.youtube.com/@CleanStartOfficial<br>
+ 
+**Contribute to Container Use Cases**: https://github.com/cleanstart-dev/cleanstart-use-cases/
 
 ## Vulnerability Disclaimer
 
